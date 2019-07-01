@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declarar tres objetos de nombre Hugo, Paco y Luis.   Cada obtejo debe tener estos atributos:  nombre, edad, ciudad.   Usted debe asignar edades y ciudades a cada objeto.
+            var Hugo = {nombre: "Hugo", edad: 25, ciudad: "Loja"}
+            var Paco = {nombre: "Paco", edad: 26, ciudad: "Quito"}
+            var Luis = {nombre: "Luis", edad: 27, ciudad: "Manabi"}
+            
+            //1.- Declarar un array vacio de nombre amigos
+            var amigos = [];
+            //2.- Insertar los tres objetos (Hugo, Paco y Luis) en el array amigos.
+            amigos.push(Hugo,Paco,Luis);
+            //3.- Imprimir en consola la longitud del array amigos.
+            console.log(amigos.length);
+            //4.- Crear un nuevo objeto de nombre Elena (con los mismos tres atributos de los objetos iniciales: nombre, edad, ciudad)
+            var Elena = {nombre: "Elena", edad: 29, ciudad: "Cuenca"}
+            //5.- Declarar una variable numeroDeAmigos y guardar el número de elementos que tiene el array (usando la propiedad que devuelve el número de elementos de un array).
+            var numeroDeAmigos = [Hugo,Paco,Luis];
+            console.log(numeroDeAmigos.length);
+            //6.- Hacer una función que se llame saludo, la función recibe como parámetro un objeto,  si la edad es par: imprime en consola “Saluton kaj bonvenon”.  Cuando la edad es impar imprime en consola “Hello moto”.
+           var saludo = function(objeto){
+               if (objeto%2 === 0){
+                    console.log("Saluton kaj bonvenon");
+                              }else{
+                    
+                    console.log("Hello moto");
+                                   }
+                                    }
+            //7.- Hacer una función de nombre arriba  que recibe un objeto por parámetro e imprime en consola desde el uno, de manera ascendente hasta el atributo edad del objeto recibido como parámetro.
+            
+            var arriba = function(X){
+                if(X === 200){
+                    return 200;
+                }else 
+                console.log(X);
+                return arriba(X+1)
+            }
+           
+            //8.- Hacer una función de nombre abajo  que recibe un objeto por parámetro e imprime en consola desde la edad del objeto hasta cero, de manera descendente.
+            
+            var abajo=function (x){
+                    if (edad === 1){
+                             return 1;  
+                     }else{
+                    console.log(edad);
+                        return abajo(edad -1);
+                     }
+                    }
+
+            //9.- Hacer una función de nombre edadTotal que recibe cuatro objetos como parámetros y escribe en pantalla la suma de las edades de los cuatro objetos recibidos.
+        var edad1 = 2;
+        var edad2 = 5;
+        var edad3 = 7;
+        var edad4 = 18;
+        var edadTotal = function(edad1,edad2,edad3,edad4){
+            if (edad1,edad2,edad3,edad4 ===0){
+                return 0;
+            }else{
+                suma = edad1+edad2+edad3+edad4;
+                console.log("La suma de las edades es : " + suma);
+            }
+        }
+        
+    </script>
+</body>
+</html>
